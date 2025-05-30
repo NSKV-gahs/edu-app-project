@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header>
-      <h1>IdApp</h1>
-
-<progress id="level" value="0" max="1">  </progress>
-    
-      <output id="1">0</output>
+        <h1>IdApp</h1>
+        <progress id="level" value="0" max="1"> </progress>
+        <output id="score">0</output>
     </header>
     <main>
-       <form onsubmit="check(event)">
+        <form onsubmit="check(event)">
             <p>What is on the video?</p>
             <input type="text" id="userAnswer" placeholder="Type your answer here" required>
             <button type="submit">Submit </button>
         </form>
-         <video id="videoPlayer" width="640" height="360" controls>
+        <video id="videoPlayer" width="640" height="360" controls>
             <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </main>
 </body>
+
 </html>
