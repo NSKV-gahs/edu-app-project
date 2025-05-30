@@ -23,13 +23,14 @@ function check(event) {
             video.children[0].src = levels[currentLevel].video;
             video.load();
         }
+          if (currentLevel === levels.length) {
+            alert("🎉 You've completed all levels!");
+        }
     } else {
         score.value = Number(score.value) - 1;
         alert("Answer incorrect or wrong level!");
     }
 
-        if (currentLevel === levels.length) {
-            alert("🎉 You've completed all levels!");
-        }
+      
     return false;
 }
