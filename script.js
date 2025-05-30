@@ -11,7 +11,9 @@ function check(event) {
     let level = document.getElementById('level'); 
     const inputValue = event.target.userAnswer.value;
     const video = document.getElementById('videoPlayer');
-    const currentLevel = Number(level.value) - 1;
+    level.max = levels.length;
+    level.value = 0;
+    const currentLevel = Number(level.value);
 
     if (currentLevel < levels.length && inputValue == levels[currentLevel].answer) {
         alert("Answer correct");
