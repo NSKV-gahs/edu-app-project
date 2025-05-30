@@ -12,7 +12,6 @@ function check(event) {
     const inputValue = event.target.userAnswer.value;
     const video = document.getElementById('videoPlayer');
     level.max = levels.length;
-    level.value = 0;
     const currentLevel = Number(level.value);
 
     if (currentLevel < levels.length && inputValue == levels[currentLevel].answer) {
@@ -29,5 +28,8 @@ function check(event) {
         alert("Answer incorrect or wrong level!");
     }
 
+        if (currentLevel === levels.length) {
+            alert("🎉 You've completed all levels!");
+        }
     return false;
 }
